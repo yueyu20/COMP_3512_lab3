@@ -3,4 +3,4 @@ project(COMP_3512_lab3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(COMP_3512_lab3 main.cpp)
+add_executable(COMP_3512_lab3 main.cpp stack.hpp stack.cpp)
