@@ -36,5 +36,15 @@ int stack::getTop() const {
 }
 
 bool stack::isEmpty() const {
+    return (top < 0);
+}
 
+bool stack::isFull() const {
+    return (top == MAX);
+}
+
+void stack::print() const{
+    for(int i = 0; i < MAX; i++) {
+        cout << arr[i] << " ";
+    }
 }

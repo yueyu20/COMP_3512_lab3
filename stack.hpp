@@ -17,6 +17,8 @@ public:
     void pop();
     int getTop() const;
     bool isEmpty() const;
+    bool isFull() const;
+    void print() const;
 
 
 };
