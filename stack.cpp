@@ -12,7 +12,7 @@ stack::stack() {
 }
 
 bool stack::push(int x) {
-    if (top > MAX) {
+    if (top >= MAX - 1) {
         cout << "Stack Overflow";
         return false;
     } else{
@@ -40,7 +40,7 @@ bool stack::isEmpty() const {
 }
 
 bool stack::isFull() const {
-    return (top == MAX);
+    return (top == MAX - 1);
 }
 
 void stack::print() const{
